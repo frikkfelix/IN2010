@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Oblig2",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig21.Oblig2",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Oblig2",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig2.Oblig2",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig2.Main",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Graph",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig1.Graph",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaximumSubarray",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig0.MaximumSubarray",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Maxsub",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig0.Maxsub",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayMax",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig0.ArrayMax",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibonacci",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig0.Fibonacci",
+            "projectName": "me.frikk.obliger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "me.frikk.oblig1.App",
+            "projectName": "me.frikk.obliger"
+        }
+    ]
+}

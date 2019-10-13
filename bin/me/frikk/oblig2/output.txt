@@ -1,0 +1,689 @@
+# buildhouse1.txt
+
+****  Simulation of project execution  ****
+
+Time: 0 	Starting: 5
+          	Current staff: 2
+
+Time: 4 	Finished: 5
+          	Starting: 1
+          	Starting: 6
+          	Current staff: 4
+
+Time: 6 	Finished: 6
+          	Current staff: 2
+
+Time: 8 	Finished: 1
+          	Starting: 2
+          	Current staff: 4
+
+Time: 14 	Finished: 2
+          	Starting: 3
+          	Starting: 4
+          	Starting: 7
+          	Current staff: 7
+
+Time: 15 	Finished: 3
+          	Finished: 4
+          	Current staff: 2
+
+Time: 18 	Finished: 7
+          	Starting: 8
+          	Current staff: 4
+
+Time: 22 	Finished: 8
+
+****  Shortest possible project execution is 22  ****
+
+This project consists of the following 8 tasks:
+
+Task 1: Build-walls
+Time to complete: 4
+Manpower required: 2
+Earliest starting time: 4
+Slack: 0
+Tasks which depend on this task: 2, 3
+
+Task 2: Build-roofs
+Time to complete: 6
+Manpower required: 4
+Earliest starting time: 8
+Slack: 0
+Tasks which depend on this task: 3, 4, 7
+
+Task 3: Put-on-wallpapers
+Time to complete: 1
+Manpower required: 2
+Earliest starting time: 14
+Slack: 3
+Tasks which depend on this task: 8
+
+Task 4: Put-on-tiles
+Time to complete: 1
+Manpower required: 3
+Earliest starting time: 14
+Slack: 7
+
+Task 5: Build-foundation
+Time to complete: 4
+Manpower required: 2
+Earliest starting time: 0
+Slack: 0
+Tasks which depend on this task: 1, 6
+
+Task 6: Make-floor
+Time to complete: 2
+Manpower required: 2
+Earliest starting time: 4
+Slack: 8
+Tasks which depend on this task: 7
+
+Task 7: Put-carpet-floor
+Time to complete: 4
+Manpower required: 2
+Earliest starting time: 14
+Slack: 0
+Tasks which depend on this task: 8
+
+Task 8: Move-in
+Time to complete: 4
+Manpower required: 4
+Earliest starting time: 18
+Slack: 0
+
+# buildhouse2.txt
+
+****  Project contains a cycle, and is not realizable  ****
+
+The following cycle was found: 1 -> 2 -> 7 -> 6 -> 1
+
+# examplefigure.txt
+
+****  Simulation of project execution  ****
+
+Time: 0 	Starting: 1
+          	Starting: 2
+          	Current staff: 6
+
+Time: 3 	Finished: 1
+          	Current staff: 2
+
+Time: 5 	Finished: 2
+          	Starting: 3
+          	Starting: 4
+          	Current staff: 6
+
+Time: 6 	Finished: 3
+          	Starting: 5
+          	Current staff: 7
+
+Time: 7 	Finished: 4
+          	Starting: 6
+          	Current staff: 7
+
+Time: 10 	Finished: 5
+          	Current staff: 4
+
+Time: 15 	Finished: 6
+          	Starting: 7
+          	Starting: 8
+          	Current staff: 5
+
+Time: 16 	Finished: 8
+          	Current staff: 2
+
+Time: 18 	Finished: 7
+
+****  Shortest possible project execution is 18  ****
+
+This project consists of the following 8 tasks:
+
+Task 1: 1
+Time to complete: 3
+Manpower required: 4
+Earliest starting time: 0
+Slack: 3
+Tasks which depend on this task: 3
+
+Task 2: 2
+Time to complete: 5
+Manpower required: 2
+Earliest starting time: 0
+Slack: 0
+Tasks which depend on this task: 3, 4
+
+Task 3: 3
+Time to complete: 1
+Manpower required: 2
+Earliest starting time: 5
+Slack: 1
+Tasks which depend on this task: 5, 6
+
+Task 4: 4
+Time to complete: 2
+Manpower required: 4
+Earliest starting time: 5
+Slack: 0
+Tasks which depend on this task: 6
+
+Task 5: 5
+Time to complete: 4
+Manpower required: 3
+Earliest starting time: 6
+Slack: 5
+Tasks which depend on this task: 7
+
+Task 6: 6
+Time to complete: 8
+Manpower required: 4
+Earliest starting time: 7
+Slack: 0
+Tasks which depend on this task: 7, 8
+
+Task 7: 7
+Time to complete: 3
+Manpower required: 2
+Earliest starting time: 15
+Slack: 0
+
+Task 8: 8
+Time to complete: 1
+Manpower required: 3
+Earliest starting time: 15
+Slack: 2
+
+# buildgarage.txt
+
+****  Simulation of project execution  ****
+
+Time: 0 	    Starting: 1
+          	    Current staff: 1
+
+Time: 14280 	Finished: 1
+          	    Starting: 2
+          	    Starting: 3
+          	    Current staff: 4
+
+Time: 14284 	Finished: 2
+          	    Current staff: 3
+
+Time: 230182 	Finished: 3
+          	    Starting: 4
+          	    Current staff: 2
+
+Time: 262316 	Finished: 4
+          	    Starting: 5
+          	    Starting: 6
+            	Starting: 7
+          	    Current staff: 6
+
+Time: 262331 	Finished: 7
+          	    Current staff: 5
+
+Time: 262458 	Finished: 6
+          	    Current staff: 4
+
+Time: 303548 	Finished: 5
+          	    Starting: 9
+          	    Starting: 11
+          	    Current staff: 6
+
+Time: 307873 	Finished: 11
+          	    Starting: 12
+          	    Current staff: 8
+
+Time: 309675 	Finished: 9
+          	    Starting: 10
+          	    Current staff: 7
+
+Time: 363997 	Finished: 10
+          	    Starting: 8
+          	    Current staff: 6
+
+Time: 405242 	Finished: 8
+            	Current staff: 4
+
+Time: 429351 	Finished: 12
+          	    Starting: 13
+          	    Current staff: 3
+
+Time: 430593 	Finished: 13
+          	    Starting: 14
+          	    Current staff: 2
+
+Time: 484913 	Finished: 14
+
+****  Shortest possible project execution is 484913  ****
+
+This project consists of the following 14 tasks:
+
+Task 1: get-paperwork
+Time to complete: 14280
+Manpower required: 1
+Earliest starting time: 0
+Slack: 0
+Tasks which depend on this task: 2, 3
+
+Task 2: call-contractor
+Time to complete: 4
+Manpower required: 1
+Earliest starting time: 14280
+Slack: 215898
+Tasks which depend on this task: 4
+
+Task 3: clean-yard
+Time to complete: 215902
+Manpower required: 3
+Earliest starting time: 14280
+Slack: 0
+Tasks which depend on this task: 4
+
+Task 4: build-foundation
+Time to complete: 32134
+Manpower required: 2
+Earliest starting time: 230182
+Slack: 0
+Tasks which depend on this task: 5, 6, 7
+
+Task 5: build-wall-support
+Time to complete: 41232
+Manpower required: 4
+Earliest starting time: 262316
+Slack: 0
+Tasks which depend on this task: 8, 9, 11
+
+Task 6: lay-electrical-cables
+Time to complete: 142
+Manpower required: 1
+Earliest starting time: 262316
+Slack: 222455
+
+Task 7: call-electrician
+Time to complete: 15
+Manpower required: 1
+Earliest starting time: 262316
+Slack: 181337
+Tasks which depend on this task: 8
+
+Task 8: install-electrical-gate-opener
+Time to complete: 41245
+Manpower required: 2
+Earliest starting time: 363997
+Slack: 79671
+
+Task 9: build-walls
+Time to complete: 6127
+Manpower required: 4
+Earliest starting time: 303548
+Slack: 79671
+Tasks which depend on this task: 10, 13
+
+Task 10: add-gate
+Time to complete: 54322
+Manpower required: 3
+Earliest starting time: 309675
+Slack: 79671
+Tasks which depend on this task: 8
+
+Task 11: build-stairs
+Time to complete: 4325
+Manpower required: 2
+Earliest starting time: 303548
+Slack: 0
+Tasks which depend on this task: 12
+
+Task 12: add-2nd-floor
+Time to complete: 121478
+Manpower required: 4
+Earliest starting time: 307873
+Slack: 0
+Tasks which depend on this task: 13
+
+Task 13: isolate-room
+Time to complete: 1242
+Manpower required: 3
+Earliest starting time: 429351
+Slack: 0
+Tasks which depend on this task: 14
+
+Task 14: furnish-appartment
+Time to complete: 54320
+Manpower required: 2
+Earliest starting time: 430593
+Slack: 0
+
+# buildrail.txt
+
+****  Simulation of project execution  ****
+
+Time: 0 	Starting: 9
+          	Current staff: 10
+
+Time: 3 	Finished: 9
+          	Starting: 10
+          	Starting: 11
+          	Starting: 12
+          	Starting: 14
+          	Starting: 16
+          	Starting: 17
+          	Current staff: 56
+
+Time: 4 	Finished: 11
+          	Starting: 18
+          	Starting: 19
+          	Starting: 20
+          	Current staff: 64
+
+Time: 5 	Finished: 10
+          	Starting: 2
+          	Current staff: 70
+
+Time: 12 	Finished: 2
+          	Current staff: 60
+
+Time: 16 	Finished: 20
+          	Starting: 23
+          	Current staff: 61
+
+Time: 28 	Finished: 14
+          	Starting: 15
+          	Current staff: 61
+
+Time: 29 	Finished: 19
+          	Current staff: 57
+
+Time: 33 	Finished: 12
+          	Starting: 13
+          	Current staff: 57
+
+Time: 38 	Finished: 16
+          	Current staff: 45
+
+Time: 44 	Finished: 18
+          	Starting: 21
+          	Current staff: 46
+
+Time: 46 	Finished: 23
+          	Starting: 26
+          	Current staff: 48
+
+Time: 48 	Finished: 17
+          	Finished: 15
+          	Starting: 22
+          	Current staff: 29
+
+Time: 51 	Finished: 13
+          	Starting: 8
+          	Current staff: 24
+
+Time: 59 	Finished: 21
+          	Starting: 24
+          	Current staff: 26
+
+Time: 63 	Finished: 8
+          	Starting: 3
+          	Current staff: 29
+
+Time: 64 	Finished: 22
+          	Finished: 3
+          	Starting: 25
+          	Current staff: 21
+
+Time: 66 	Finished: 26
+          	Current staff: 14
+
+Time: 119 	Finished: 24
+          	Starting: 4
+          	Current staff: 13
+
+Time: 124 	Finished: 25
+          	Starting: 5
+          	Starting: 27
+          	Current staff: 22
+
+Time: 134 	Finished: 4
+          	Current staff: 16
+
+Time: 136 	Finished: 5
+          	Current staff: 10
+
+Time: 149 	Finished: 27
+          	Starting: 28
+          	Starting: 29
+          	Current staff: 20
+
+Time: 179 	Finished: 28
+          	Current staff: 10
+
+Time: 186 	Finished: 29
+          	Starting: 1
+          	Starting: 6
+          	Starting: 7
+          	Starting: 30
+          	Current staff: 29
+
+Time: 204 	Finished: 7
+          	Current staff: 23
+
+Time: 206 	Finished: 1
+          	Finished: 30
+          	Starting: 31
+          	Current staff: 13
+
+Time: 213 	Finished: 6
+          	Current staff: 7
+
+Time: 218 	Finished: 31
+
+****  Shortest possible project execution is 218  ****
+
+This project consists of the following 31 tasks:
+
+Task 1: Install-pavement
+Time to complete: 20
+Manpower required: 10
+Earliest starting time: 186
+Slack: 12
+
+Task 2: Install-railing
+Time to complete: 7
+Manpower required: 10
+Earliest starting time: 5
+Slack: 206
+
+Task 3: Install-ticketmachine
+Time to complete: 1
+Manpower required: 10
+Earliest starting time: 63
+Slack: 154
+
+Task 4: Paint-tower-1-with-arch
+Time to complete: 15
+Manpower required: 6
+Earliest starting time: 119
+Slack: 84
+
+Task 5: Paint-tower-2
+Time to complete: 12
+Manpower required: 6
+Earliest starting time: 124
+Slack: 82
+
+Task 6: Paint-trusses
+Time to complete: 27
+Manpower required: 6
+Earliest starting time: 186
+Slack: 5
+
+Task 7: Paint-cables-and-rods
+Time to complete: 18
+Manpower required: 6
+Earliest starting time: 186
+Slack: 14
+
+Task 8: Put-lane-tunnel-and-intersection
+Time to complete: 12
+Manpower required: 7
+Earliest starting time: 51
+Slack: 143
+Tasks which depend on this task: 3, 31
+
+Task 9: Setup-barrack
+Time to complete: 3
+Manpower required: 10
+Earliest starting time: 0
+Slack: 0
+Tasks which depend on this task: 10, 11, 12, 14, 16, 17
+
+Task 10: Prepare-storage
+Time to complete: 2
+Manpower required: 4
+Earliest starting time: 3
+Slack: 206
+Tasks which depend on this task: 2
+
+Task 11: Rig-ramspace-reinforcing
+Time to complete: 1
+Manpower required: 4
+Earliest starting time: 3
+Slack: 5
+Tasks which depend on this task: 18, 19, 20
+
+Task 12: Build-tunnel
+Time to complete: 30
+Manpower required: 12
+Earliest starting time: 3
+Slack: 143
+Tasks which depend on this task: 13
+
+Task 13: Clean-tunnel
+Time to complete: 18
+Manpower required: 12
+Earliest starting time: 33
+Slack: 143
+Tasks which depend on this task: 8
+
+Task 14: Build-intersection
+Time to complete: 25
+Manpower required: 12
+Earliest starting time: 3
+Slack: 146
+Tasks which depend on this task: 15
+
+Task 15: Clean-intersection
+Time to complete: 20
+Manpower required: 12
+Earliest starting time: 28
+Slack: 146
+Tasks which depend on this task: 8
+
+Task 16: Build-towerfoundation-1
+Time to complete: 35
+Manpower required: 12
+Earliest starting time: 3
+Slack: 11
+Tasks which depend on this task: 21
+
+Task 17: Build-towerfoundation-2
+Time to complete: 45
+Manpower required: 12
+Earliest starting time: 3
+Slack: 0
+Tasks which depend on this task: 22
+
+Task 18: Make-armouring-tower-1
+Time to complete: 40
+Manpower required: 4
+Earliest starting time: 4
+Slack: 5
+Tasks which depend on this task: 21
+
+Task 19: Make-armouring-tower-2
+Time to complete: 25
+Manpower required: 4
+Earliest starting time: 4
+Slack: 19
+Tasks which depend on this task: 22
+
+Task 20: Make-armouring-arch
+Time to complete: 12
+Manpower required: 4
+Earliest starting time: 4
+Slack: 140
+Tasks which depend on this task: 23
+
+Task 21: Encase-and-armour-tower-1
+Time to complete: 15
+Manpower required: 5
+Earliest starting time: 44
+Slack: 5
+Tasks which depend on this task: 24
+
+Task 22: Encase-and-armour-tower-2
+Time to complete: 16
+Manpower required: 5
+Earliest starting time: 48
+Slack: 0
+Tasks which depend on this task: 25
+
+Task 23: Encase-and-armour-arch
+Time to complete: 30
+Manpower required: 5
+Earliest starting time: 16
+Slack: 140
+Tasks which depend on this task: 26
+
+Task 24: Cast-tower-1
+Time to complete: 60
+Manpower required: 7
+Earliest starting time: 59
+Slack: 5
+Tasks which depend on this task: 4, 27
+
+Task 25: Cast-tower-2
+Time to complete: 60
+Manpower required: 7
+Earliest starting time: 64
+Slack: 0
+Tasks which depend on this task: 5, 27
+
+Task 26: Cast-arch
+Time to complete: 20
+Manpower required: 7
+Earliest starting time: 46
+Slack: 140
+Tasks which depend on this task: 31
+
+Task 27: Stretch-two-maincables
+Time to complete: 25
+Manpower required: 10
+Earliest starting time: 124
+Slack: 0
+Tasks which depend on this task: 28, 29
+
+Task 28: Build-truss-1-with-rods
+Time to complete: 30
+Manpower required: 10
+Earliest starting time: 149
+Slack: 7
+Tasks which depend on this task: 1, 6, 7, 30
+
+Task 29: Build-truss-2-with-rods
+Time to complete: 37
+Manpower required: 10
+Earliest starting time: 149
+Slack: 0
+Tasks which depend on this task: 1, 6, 7, 30
+
+Task 30: Cast-lane-on-truss
+Time to complete: 20
+Manpower required: 7
+Earliest starting time: 186
+Slack: 0
+Tasks which depend on this task: 31
+
+Task 31: Polish-lane-on-arch
+Time to complete: 12
+Manpower required: 7
+Earliest starting time: 206
+Slack: 0
