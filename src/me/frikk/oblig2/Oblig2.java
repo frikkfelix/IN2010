@@ -7,8 +7,7 @@ import java.util.stream.Collectors;
 
 class Oblig2 {
     public static void main(String[] args) throws FileNotFoundException {
-        //File file = new File(args[0]);
-        File file = new File("/Users/frikk/Documents/3. semester/IN2010/ProjectsAoDS/me.frikk.obliger/src/me/frikk/oblig21/buildgarage.txt");
+        File file = new File(args[0]);
         Project project = Project.readFromFile(file);
         List<Task> topSorted = project.topologicalSort();
 
